@@ -25,3 +25,12 @@ function addToCart(product) {
     localStorage.setItem("cart", JSON.stringify(cart));
     alert(product.name + " تمت إضافته إلى السلة");
 }
+function updateCartCount() {
+    const count = document.getElementById("cart-count");
+    if (count) {
+        const cart = JSON.parse(localStorage.getItem("cart")) || [];
+        count.textContent = cart.length;
+    }
+}
+
+updateCartCount();
