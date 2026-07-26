@@ -76,7 +76,7 @@ container.innerHTML += `
 
 <div class="price">${product.price}</div>
 
-<button class="buy">
+<button class="buy" onclick='addToCart(${JSON.stringify(product)})'>
 أضف إلى السلة 🛒
 </button>
 
