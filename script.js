@@ -20,10 +20,15 @@ if (container) {
 
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-function addToCart(product) {
+function addToCart(product){
     cart.push(product);
+
     localStorage.setItem("cart", JSON.stringify(cart));
+
+    updateCartCount();
+
     alert(product.name + " تمت إضافته إلى السلة");
+
 }
 function updateCartCount() {
     const count = document.getElementById("cart-count");
