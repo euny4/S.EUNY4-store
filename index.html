@@ -1,324 +1,109 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S.EUNY4 Store</title>
 
-<title>S.EUNY4 Store</title>
+    <link rel="stylesheet" href="style.css">
 
-<style>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
-}
-
-body{
-background:#f3f4f6;
-color:#222;
-}
-
-header{
-background:#111827;
-color:white;
-padding:20px 8%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-}
-
-.logo{
-font-size:30px;
-font-weight:bold;
-color:#00d4ff;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-margin:0 15px;
-font-weight:bold;
-transition:.3s;
-}
-
-nav a:hover{
-color:#00d4ff;
-}
-
-.hero{
-height:420px;
-display:flex;
-justify-content:center;
-align-items:center;
-flex-direction:column;
-background:linear-gradient(135deg,#0f172a,#1e293b);
-color:white;
-text-align:center;
-padding:20px;
-}
-
-.hero h1{
-font-size:55px;
-margin-bottom:15px;
-}
-
-.hero p{
-font-size:22px;
-margin-bottom:30px;
-}
-
-.hero button{
-background:#00d4ff;
-border:none;
-padding:15px 35px;
-font-size:18px;
-border-radius:40px;
-cursor:pointer;
-transition:.3s;
-}
-
-.hero button:hover{
-transform:scale(1.05);
-}
-
-.products-title{
-text-align:center;
-font-size:40px;
-margin:60px 0 30px;
-}
-
-.products{
-
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:30px;
-padding:0 8% 60px;
-
-}
-
-.card{
-
-background:white;
-border-radius:15px;
-overflow:hidden;
-box-shadow:0 10px 25px rgba(0,0,0,.1);
-transition:.3s;
-
-}
-
-.card:hover{
-
-transform:translateY(-10px);
-
-}
-
-.card img{
-
-width:100%;
-height:260px;
-object-fit:cover;
-
-}
-
-.card-content{
-
-padding:20px;
-
-}
-
-.card h2{
-
-margin-bottom:10px;
-
-}
-
-.card p{
-
-color:#666;
-
-}
-
-.price{
-
-margin:15px 0;
-font-size:24px;
-color:#009933;
-font-weight:bold;
-
-}
-
-.card button{
-
-width:100%;
-padding:14px;
-background:#111827;
-color:white;
-border:none;
-border-radius:8px;
-cursor:pointer;
-font-size:17px;
-transition:.3s;
-
-}
-
-.card button:hover{
-
-background:#00d4ff;
-
-}
-
-footer{
-
-background:#111827;
-color:white;
-padding:25px;
-text-align:center;
-
-}
-
-</style>
-
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
 
 <header>
 
-<div class="logo">S.EUNY4</div>
+<div class="logo">
+S.EUNY4
+</div>
+
+<div class="search">
+
+<input type="text" placeholder="ابحث عن المنتجات...">
+
+<button>
+<i class="fa-solid fa-magnifying-glass"></i>
+</button>
+
+</div>
+
+<div class="icons">
+
+<i class="fa-regular fa-heart"></i>
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+<i class="fa-regular fa-user"></i>
+
+</div>
+
+</header>
 
 <nav>
 
 <a href="#">الرئيسية</a>
-<a href="#">المنتجات</a>
-<a href="#">العروض</a>
-<a href="#">اتصل بنا</a>
+
+<a href="#">نساء</a>
+
+<a href="#">رجال</a>
+
+<a href="#">أطفال</a>
+
+<a href="#">حقائب</a>
+
+<a href="#">أحذية</a>
+
+<a href="#">تجميل</a>
+
+<a href="#">إلكترونيات</a>
 
 </nav>
 
-</header>
-
 <section class="hero">
 
-<h1>مرحباً بك في S.EUNY4 Store</h1>
+<h1>تخفيضات الصيف</h1>
 
-<p>أفضل المنتجات بأفضل الأسعار</p>
+<p>خصومات تصل إلى 70%</p>
 
 <button>تسوق الآن</button>
 
 </section>
 
-<h2 class="products-title">منتجاتنا</h2>
+<section class="categories">
+
+<h2>الأقسام</h2>
+
+<div class="cats">
+
+<div class="cat">👗<span>نساء</span></div>
+
+<div class="cat">👕<span>رجال</span></div>
+
+<div class="cat">👶<span>أطفال</span></div>
+
+<div class="cat">👜<span>حقائب</span></div>
+
+<div class="cat">👟<span>أحذية</span></div>
+
+<div class="cat">💄<span>تجميل</span></div>
+
+<div class="cat">⌚<span>ساعات</span></div>
+
+<div class="cat">📱<span>إلكترونيات</span></div>
+
+</div>
+
+</section>
 
 <section class="products">
 
-<div class="card">
+<h2>المنتجات المميزة</h2>
 
-<img src="https://picsum.photos/400/400?1">
-
-<div class="card-content">
-
-<h2>حقيبة نسائية</h2>
-
-<p>تصميم أنيق وعصري.</p>
-
-<div class="price">39 €</div>
-
-<button onclick="add()">أضف إلى السلة</button>
-
-</div>
-
-</div>
-
-<div class="card">
-
-<img src="https://picsum.photos/400/400?2">
-
-<div class="card-content">
-
-<h2>ساعة يد</h2>
-
-<p>جودة عالية.</p>
-
-<div class="price">59 €</div>
-
-<button onclick="add()">أضف إلى السلة</button>
-
-</div>
-
-</div>
-
-<div class="card">
-
-<img src="https://picsum.photos/400/400?3">
-
-<div class="card-content">
-
-<h2>حذاء رياضي</h2>
-
-<p>راحة وأناقة.</p>
-
-<div class="price">75 €</div>
-
-<button onclick="add()">أضف إلى السلة</button>
-
-</div>
-
-</div>
-
-<div class="card">
-
-<img src="https://picsum.photos/400/400?4">
-
-<div class="card-content">
-
-<h2>سماعات</h2>
-
-<p>صوت نقي.</p>
-
-<div class="price">49 €</div>
-
-<button onclick="add()">أضف إلى السلة</button>
-
-</div>
-
-</div>
-
-<div class="card">
-
-<img src="https://picsum.photos/400/400?5">
-
-<div class="card-content">
-
-<h2>عطر فاخر</h2>
-
-<p>رائحة تدوم طويلاً.</p>
-
-<div class="price">65 €</div>
-
-<button onclick="add()">أضف إلى السلة</button>
-
-</div>
-
-</div>
-
-<div class="card">
-
-<img src="https://picsum.photos/400/400?6">
-
-<div class="card-content">
-
-<h2>نظارات شمسية</h2>
-
-<p>تصميم عصري.</p>
-
-<div class="price">29 €</div>
-
-<button onclick="add()">أضف إلى السلة</button>
-
-</div>
+<div class="product-grid">
 
 </div>
 
@@ -326,20 +111,11 @@ text-align:center;
 
 <footer>
 
-© 2026 S.EUNY4 Store - جميع الحقوق محفوظة
+© 2026 S.EUNY4 Store
 
 </footer>
 
-<script>
-
-function add(){
-
-alert("تمت إضافة المنتج إلى السلة 🛒");
-
-}
-
-</script>
+<script src="script.js"></script>
 
 </body>
-
 </html>
