@@ -1,1 +1,146 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>سلة المشتريات | S.EUNY4 Store</title>
 
+<link rel="stylesheet" href="style.css">
+
+<style>
+.cart-container{
+    max-width:1100px;
+    margin:40px auto;
+    padding:20px;
+}
+
+.cart-item{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    background:white;
+    padding:15px;
+    margin-bottom:15px;
+    border-radius:12px;
+    box-shadow:0 5px 10px rgba(0,0,0,.1);
+}
+
+.cart-item img{
+    width:90px;
+    height:90px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.cart-info{
+    flex:1;
+    margin:0 20px;
+}
+
+.remove-btn{
+    background:#ff3366;
+    color:white;
+    border:none;
+    padding:10px 15px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.total{
+    margin-top:30px;
+    font-size:24px;
+    font-weight:bold;
+    text-align:left;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+<a href="index.html">S.EUNY4</a>
+</div>
+
+</header>
+
+<div class="cart-container">
+
+<h1>🛒 سلة المشتريات</h1>
+
+<div id="cartItems"></div>
+
+<div class="total">
+الإجمالي: <span id="total">0 €</span>
+</div>
+
+</div>
+
+<script>
+
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+const cartItems=document.getElementById("cartItems");
+
+const total=document.getElementById("total");
+
+let sum=0;
+
+function renderCart(){
+
+cartItems.innerHTML="";
+
+sum=0;
+
+cart.forEach((item,index)=>{
+
+sum+=parseFloat(item.price);
+
+cartItems.innerHTML+=`
+
+<div class="cart-item">
+
+<img src="${item.image}">
+
+<div class="cart-info">
+
+<h3>${item.name}</h3>
+
+<p>${item.price}</p>
+
+</div>
+
+<button class="remove-btn" onclick="removeItem(${index})">
+
+حذف
+
+</button>
+
+</div>
+
+`;
+
+});
+
+total.innerHTML=sum+" €";
+
+}
+
+function removeItem(index){
+
+cart.splice(index,1);
+
+localStorage.setItem("cart",JSON.stringify(cart));
+
+renderCart();
+
+}
+
+renderCart();
+
+</script>
+
+</body>
+</html>
