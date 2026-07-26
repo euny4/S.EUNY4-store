@@ -1,47 +1,65 @@
 const products = [
 {
+id:1,
 name:"فستان أنيق",
+category:"نساء",
 price:"39 €",
-image:"https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=600"
+image:"https://picsum.photos/400/500?random=1"
 },
 {
-name:"حقيبة نسائية",
-price:"45 €",
-image:"https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=600"
+id:2,
+name:"حقيبة جلد",
+category:"حقائب",
+price:"55 €",
+image:"https://picsum.photos/400/500?random=2"
 },
 {
+id:3,
 name:"حذاء رياضي",
-price:"69 €",
-image:"https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600"
+category:"أحذية",
+price:"79 €",
+image:"https://picsum.photos/400/500?random=3"
 },
 {
+id:4,
 name:"ساعة يد",
-price:"89 €",
-image:"https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=600"
+category:"إكسسوارات",
+price:"120 €",
+image:"https://picsum.photos/400/500?random=4"
 },
 {
-name:"أحمر شفاه",
-price:"19 €",
-image:"https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=600"
-},
-{
-name:"سماعات لاسلكية",
-price:"59 €",
-image:"https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600"
-},
-{
+id:5,
 name:"قميص رجالي",
+category:"رجال",
 price:"35 €",
-image:"https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600"
+image:"https://picsum.photos/400/500?random=5"
 },
 {
-name:"حقيبة سفر",
-price:"95 €",
-image:"https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=600"
+id:6,
+name:"فستان أطفال",
+category:"أطفال",
+price:"25 €",
+image:"https://picsum.photos/400/500?random=6"
+},
+{
+id:7,
+name:"أحمر شفاه",
+category:"تجميل",
+price:"18 €",
+image:"https://picsum.photos/400/500?random=7"
+},
+{
+id:8,
+name:"سماعات لاسلكية",
+category:"إلكترونيات",
+price:"65 €",
+image:"https://picsum.photos/400/500?random=8"
 }
 ];
 
-const container = document.querySelector(".product-grid");
+const container = document.getElementById("productsContainer");
+
+if(container){
 
 products.forEach(product=>{
 
@@ -53,6 +71,8 @@ container.innerHTML += `
 <div class="product-info">
 
 <h3>${product.name}</h3>
+
+<p>${product.category}</p>
 
 <div class="price">${product.price}</div>
 
@@ -67,12 +87,4 @@ container.innerHTML += `
 
 });
 
-document.addEventListener("click",function(e){
-
-if(e.target.classList.contains("buy")){
-
-alert("تمت إضافة المنتج إلى السلة");
-
 }
-
-});
