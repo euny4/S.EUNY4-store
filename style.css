@@ -225,3 +225,17 @@ footer{
     background:#e6004c;
     transform:scale(1.05);
 }
+.logo a{
+    color:white;
+    text-decoration:none;
+}
+
+.icons a{
+    color:white;
+    margin-right:18px;
+    font-size:22px;
+}
+
+.icons a:hover{
+    color:#ff3366;
+}
