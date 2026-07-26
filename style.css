@@ -209,3 +209,19 @@ footer{
     padding:25px;
     margin-top:40px;
 }
+.shop-btn{
+    display:inline-block;
+    background:#ff3366;
+    color:white;
+    text-decoration:none;
+    padding:15px 40px;
+    border-radius:40px;
+    font-size:20px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.shop-btn:hover{
+    background:#e6004c;
+    transform:scale(1.05);
+}
