@@ -19,9 +19,16 @@ if (container) {
 }
 
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
+function addToCart(product) {
 
-function addToCart(product){
-    cart.push(product);
+    let found = cart.find(item => item.id === product.id);
+
+    if (found) {
+        found.quantity = (found.quantity || 1) + 1;
+    } else {
+        product.quantity = 1;
+        cart.push(product);
+    }
 
     localStorage.setItem("cart", JSON.stringify(cart));
 
