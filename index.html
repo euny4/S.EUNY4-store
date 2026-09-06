@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>S.EUNY4 Store</title>
+
+    <title>S.EUNY4 Store | متجر الأناقة</title>
 
     <link rel="stylesheet" href="style.css">
 
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -15,102 +17,263 @@
 
 <body>
 
-<header>
+<!-- ================= HEADER ================= -->
 
-<div class="logo">
-S.EUNY4
-</div>
+<header class="header">
 
-<div class="search">
+    <div class="logo">
+        S.EUNY4
+        <span>STORE</span>
+    </div>
 
-<input type="text" placeholder="ابحث عن المنتجات...">
+    <div class="search">
 
-<button>
-<i class="fa-solid fa-magnifying-glass"></i>
-</button>
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="ابحثي عن منتج..."
+        >
 
-</div>
+        <button type="button">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
 
-<div class="icons">
+    </div>
 
-<i class="fa-regular fa-heart"></i>
+    <div class="icons">
 
-<a href="cart.html" class="cart-icon">
-    <i class="fa-solid fa-cart-shopping"></i>
-    <span id="cart-count">0</span>
-</a>
+        <a href="wishlist.html" class="icon-link">
+            <i class="fa-regular fa-heart"></i>
+        </a>
 
-<i class="fa-regular fa-user"></i>
+        <a href="cart.html" class="cart-icon">
 
-</div>
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            <span id="cart-count">0</span>
+
+        </a>
+
+        <a href="login.html" class="icon-link">
+            <i class="fa-regular fa-user"></i>
+        </a>
+
+    </div>
 
 </header>
 
-<nav>
 
-<a href="#">الرئيسية</a>
+<!-- ================= NAVIGATION ================= -->
 
-<a href="#">نساء</a>
+<nav class="navbar">
 
-<a href="#">رجال</a>
+    <a href="index.html" class="active">
+        الرئيسية
+    </a>
 
-<a href="#">أطفال</a>
+    <a href="products.html?category=نساء">
+        نساء
+    </a>
 
-<a href="#">حقائب</a>
+    <a href="products.html?category=رجال">
+        رجال
+    </a>
 
-<a href="#">أحذية</a>
+    <a href="products.html?category=أطفال">
+        أطفال
+    </a>
 
-<a href="#">تجميل</a>
+    <a href="products.html?category=حقائب">
+        حقائب
+    </a>
 
-<a href="#">إلكترونيات</a>
+    <a href="products.html?category=أحذية">
+        أحذية
+    </a>
+
+    <a href="products.html?category=تجميل">
+        تجميل
+    </a>
+
+    <a href="products.html?category=إلكترونيات">
+        إلكترونيات
+    </a>
 
 </nav>
 
+
+<!-- ================= HERO ================= -->
+
 <section class="hero">
 
-<h1>تخفيضات الصيف</h1>
+    <div class="hero-content">
 
-<p>خصومات تصل إلى 70%</p>
+        <span class="hero-small">
+            ✨ اكتشفي مجموعتنا الجديدة
+        </span>
 
- <a href="products.html" class="shop-btn">تسوق الآن</a>
+        <h1>
+            أناقتك تبدأ<br>
+            <span>من هنا</span>
+        </h1>
+
+        <p>
+            اكتشفي أجمل المنتجات المختارة بعناية
+            بأسعار مميزة وجودة رائعة.
+        </p>
+
+        <a href="products.html" class="shop-btn">
+            تسوقي الآن
+            <i class="fa-solid fa-arrow-left"></i>
+        </a>
+
+    </div>
 
 </section>
+
+
+<!-- ================= CATEGORIES ================= -->
 
 <section class="categories">
 
-<h2>الأقسام</h2>
+    <div class="section-title">
 
-<div class="cats">
+        <span>تسوقي حسب</span>
 
-<div class="cat">👗<span>نساء</span></div>
+        <h2>
+            الأقسام
+        </h2>
 
-<div class="cat">👕<span>رجال</span></div>
+    </div>
 
-<div class="cat">👶<span>أطفال</span></div>
 
-<div class="cat">👜<span>حقائب</span></div>
+    <div class="cats">
 
-<div class="cat">👟<span>أحذية</span></div>
+        <a href="products.html?category=نساء" class="cat">
+            <div class="cat-icon">👗</div>
+            <span>نساء</span>
+        </a>
 
-<div class="cat">💄<span>تجميل</span></div>
 
-<div class="cat">⌚<span>ساعات</span></div>
+        <a href="products.html?category=رجال" class="cat">
+            <div class="cat-icon">👕</div>
+            <span>رجال</span>
+        </a>
 
-<div class="cat">📱<span>إلكترونيات</span></div>
 
-</div>
+        <a href="products.html?category=أطفال" class="cat">
+            <div class="cat-icon">👶</div>
+            <span>أطفال</span>
+        </a>
+
+
+        <a href="products.html?category=حقائب" class="cat">
+            <div class="cat-icon">👜</div>
+            <span>حقائب</span>
+        </a>
+
+
+        <a href="products.html?category=أحذية" class="cat">
+            <div class="cat-icon">👟</div>
+            <span>أحذية</span>
+        </a>
+
+
+        <a href="products.html?category=تجميل" class="cat">
+            <div class="cat-icon">💄</div>
+            <span>تجميل</span>
+        </a>
+
+
+        <a href="products.html?category=ساعات" class="cat">
+            <div class="cat-icon">⌚</div>
+            <span>ساعات</span>
+        </a>
+
+
+        <a href="products.html?category=إلكترونيات" class="cat">
+            <div class="cat-icon">📱</div>
+            <span>إلكترونيات</span>
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FEATURED PRODUCTS ================= -->
 
 <section class="products">
-    <h2>المنتجات المميزة</h2>
 
-    <div class="product-grid" id="productsContainer"></div>
+    <div class="section-title">
+
+        <span>اختياراتنا لكِ</span>
+
+        <h2>
+            المنتجات المميزة
+        </h2>
+
+    </div>
+
+
+    <div
+        class="product-grid"
+        id="productsContainer">
+    </div>
+
+
+    <div class="view-all">
+
+        <a href="products.html" class="view-btn">
+            عرض جميع المنتجات
+            <i class="fa-solid fa-arrow-left"></i>
+        </a>
+
+    </div>
+
 </section>
+
+
+<!-- ================= FOOTER ================= -->
 
 <footer>
 
-© 2026 S.EUNY4 Store
+    <div class="footer-logo">
+        S.EUNY4
+    </div>
+
+    <p>
+        متجر أنيق لكل ما تحتاجينه ✨
+    </p>
+
+    <div class="footer-links">
+
+        <a href="index.html">
+            الرئيسية
+        </a>
+
+        <a href="products.html">
+            المنتجات
+        </a>
+
+        <a href="cart.html">
+            السلة
+        </a>
+
+        <a href="login.html">
+            تسجيل الدخول
+        </a>
+
+    </div>
+
+    <div class="copyright">
+        © 2026 S.EUNY4 Store — جميع الحقوق محفوظة
+    </div>
 
 </footer>
+
+
+<!-- ================= JAVASCRIPT ================= -->
 
 <script src="products.js"></script>
 <script src="script.js"></script>
