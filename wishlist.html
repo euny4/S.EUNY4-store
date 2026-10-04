@@ -1,1 +1,75 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>المفضلة | S.EUNY4 Store</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+<body data-page="wishlist">
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">S.EUNY4 <span>STORE</span></a>
 
+      <div class="search-box">
+        <input id="searchInput" type="text" placeholder="ابحث عن منتج..." />
+        <button type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+
+      <div class="header-icons">
+        <a href="wishlist.html" class="icon-link" title="المفضلة">
+          <i class="fa-regular fa-heart"></i>
+        </a>
+        <a href="cart.html" class="icon-link" title="السلة">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span id="cart-count" class="cart-count">0</span>
+        </a>
+        <a href="login.html" class="icon-link" title="تسجيل الدخول">
+          <i class="fa-regular fa-user"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <nav class="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html">الرئيسية</a>
+      <a href="products.html?category=نساء">نساء</a>
+      <a href="products.html?category=رجال">رجال</a>
+      <a href="products.html?category=أطفال">أطفال</a>
+      <a href="products.html?category=حقائب">حقائب</a>
+      <a href="products.html?category=أحذية">أحذية</a>
+      <a href="products.html?category=تجميل">تجميل</a>
+      <a href="products.html?category=إلكترونيات">إلكترونيات</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="section-title">
+      <span>قائمة المفضلة</span>
+      <h2>منتجاتك المحفوظة</h2>
+    </div>
+
+    <div id="wishlist-items" class="wishlist-grid"></div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-logo">S.EUNY4</div>
+      <p>متجر أنيق لكل ما تحتاجينه ✨</p>
+      <div class="footer-links">
+        <a href="index.html">الرئيسية</a>
+        <a href="products.html">المنتجات</a>
+        <a href="cart.html">السلة</a>
+        <a href="login.html">تسجيل الدخول</a>
+      </div>
+      <div class="copyright">© 2026 S.EUNY4 Store — جميع الحقوق محفوظة</div>
+    </div>
+  </footer>
+
+  <script src="products.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
